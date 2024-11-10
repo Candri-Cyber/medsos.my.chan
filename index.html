@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page in One HTML</title>
+    <style>
+        /* Styling untuk menyembunyikan semua halaman kecuali halaman aktif */
+        .page {
+            display: none;
+        }
+        
+        /* Hanya tampilkan halaman aktif */
+        .active {
+            display: block;
+        }
+
+        /* Menyesuaikan tampilan konten */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px grva(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container1 {
+            background-color: #ffffff;
+            padding: 10px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px grva(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container2 {
+            background-color: #ffffff;
+            padding: 10px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px grva(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container3 {
+            background-color: #ffffff;
+            padding: 10px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px grva(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body> 
+
+    <center>
+          <!-- Halaman 1 -->
+    <div id="page1" class="container">
+        <h3>
+            <p>aku ada beberapa akun medsos</p>
+            <p>nah aku mau minta tolong</p>
+            <p>follow doang sihh 😊😊</p>
+        </h3>
+        <nav>
+            <div class="container1">
+                <a href="https://www.tiktok.com/@techtalkcandri?_t=8rH9gUFxoWX&_r=1">Tiktok</a>
+            </div>
+            <div class="container2">
+                <a href="https://www.instagram.com/can.programming/profilecard/?igsh=Y2l1aXBpNnlxOTg4">Instagram</a>
+            </div>
+            <div class="container3">
+                <a href="https://youtube.com/@slowmocapcut.?feature=shared">YouTube</a>
+            </div>
+        </nav>
+    </div>
+    </center>
+     <!-- JavaScript untuk navigasi antar halaman -->
+     <script>
+        function showPage(pageId) {
+            // Sembunyikan semua halaman
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(function(page) {
+                page.classList.remove('active');
+            });
+
+            // Tampilkan halaman yang dipilih
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
